@@ -6,7 +6,6 @@ CareBridge is an Android application built in Java with Firebase, designed to fa
 
 - 🔒 User Authentication
   - Secure login and sign-up with Firebase Authentication.
-  - Account verification and password reset functionality.
 
 - 📝 Donor & Requester Forms
   - Donor Form: Allows users to list items they want to donate, specifying type, quantity, and condition.
