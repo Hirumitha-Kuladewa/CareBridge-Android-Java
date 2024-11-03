@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "183018653766",
+    "project_id": "carebridge-28f55",
+    "storage_bucket": "carebridge-28f55.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183018653766:android:9fd5afea8484906942e247",
+        "android_client_info": {
+          "package_name": "com.naita.project.carebridge"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB48K_4Z5BhihuMR0dMpe2igP_lyJtvNZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

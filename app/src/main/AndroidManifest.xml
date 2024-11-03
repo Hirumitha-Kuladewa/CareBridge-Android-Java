@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- User features -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <!-- User permissions -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CareBridge"
+        tools:targetApi="31">
+
+        <!-- Splash Activity Declaration -->
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:theme="@style/SplashTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Activity Declaration -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <!-- Login Activities Declarations -->
+        <activity android:name=".ui.startpages.GetStartedActivity" />
+        <activity android:name=".ui.startpages.login.LoginActivity" />
+        <activity android:name=".ui.startpages.login.SignupActivity" />
+
+        <!-- Settings Activities Declarations -->
+        <activity android:name=".ui.settings.EditProfileActivity" />
+        <activity android:name=".ui.settings.ContactUsActivity" />
+        <activity android:name=".ui.settings.AboutActivity" />
+
+        <!-- Donation Activities Declarations -->
+        <activity android:name=".ui.forms.DonateActivity" />
+        <activity android:name=".ui.forms.RequestActivity" />
+        <activity android:name=".ui.forms.SelectedProductRequestActivity" />
+
+        <!-- Search Activity Declarations -->
+        <activity android:name=".ui.home.search.ProductSearchActivity" />
+
+        <!-- Layer Activity Declarations -->
+        <activity android:name=".ui.home.layer.DonationDetailActivity" />
+
+        <!-- Notification Activity Declarations -->
+        <activity android:name=".ui.notifications.NotificationDetailActivity" />
+
+    </application>
+
+</manifest>
